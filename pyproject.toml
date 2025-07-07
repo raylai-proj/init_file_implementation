@@ -1,5 +1,5 @@
 [project]
-name = "init-file-implementation"
+name = "init_file_implementation"
 version = "0.1.0"
 description = ""
 authors = [
@@ -9,7 +9,10 @@ readme = "README.md"
 requires-python = ">=3.12,<4.0"
 dependencies = [
 ]
+packages = [{ include = "strinng_func"}]
 
+[tool.poetry.scripts]
+init_file_implementation = "init_file_implementation.main:main"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^7.3.0"
